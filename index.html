@@ -6,6 +6,37 @@
     <title>Hello, World!</title>
 </head>
 <body>
+<header>
     <p>Hello, World!</p>
+</header>
+<main>
+    <section>
+        <h2>Add to a list</h2>
+        <input type="text" id="itemInput" placeholder="Enter a string">
+        <button onclick="addItem()">Add</button>
+
+        <ul id="itemList"></ul>
+    </section>
+    <script>
+        const inputBox = document.getElementById("itemInput")
+        const itemList = document.getElementById("itemList")
+
+        function addItem() {
+
+            const value = inputBox.value.trim()
+            if (value === "") return
+
+            const li = document.createElement("li")
+            li.textContent = value
+            itemList.appendChild(li);
+
+            inputBox.value = ""
+            inputBox.focus()
+        }   
+    </script>
+</main>
+<footer>
+    <p>footer</p>
+</footer>
 </body>
 </html>
