@@ -1,0 +1,7 @@
+/* TEAM */
+Developer: Kevin C
+Github: crazyswe
+
+/* SITE */
+Last Updated: 2025-05-15
+Standards: HTML5
